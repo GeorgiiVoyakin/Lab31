@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Pamela Kline",
+    "sex": "female",
+    "phoneNumber": "+1 (900) 591-3912"
+  },
+  {
+    "name": "Wood Ray",
+    "sex": "male",
+    "phoneNumber": "+1 (847) 509-2187"
+  },
+  {
+    "name": "Duran Cardenas",
+    "sex": "male",
+    "phoneNumber": "+1 (865) 476-2235"
+  },
+  {
+    "name": "Lynnette Hewitt",
+    "sex": "female",
+    "phoneNumber": "+1 (961) 472-3976"
+  },
+  {
+    "name": "Darcy Snow",
+    "sex": "female",
+    "phoneNumber": "+1 (892) 520-3748"
+  },
+  {
+    "name": "Traci Morrison",
+    "sex": "female",
+    "phoneNumber": "+1 (806) 584-2264"
+  },
+  {
+    "name": "Gates Kramer",
+    "sex": "male",
+    "phoneNumber": "+1 (852) 585-3832"
+  },
+  {
+    "name": "Macias Carr",
+    "sex": "male",
+    "phoneNumber": "+1 (930) 481-2897"
+  },
+  {
+    "name": "Gallegos Conway",
+    "sex": "male",
+    "phoneNumber": "+1 (979) 487-2774"
+  },
+  {
+    "name": "Nanette Velasquez",
+    "sex": "female",
+    "phoneNumber": "+1 (898) 515-2591"
+  },
+  {
+    "name": "Aboba Abobus",
+    "sex": "other",
+    "phoneNumber": "+1 (777) 515-2591"
+  },
+  {
+    "name": "Kek Kekus",
+    "sex": "other",
+    "phoneNumber": "+1 (213) 515-2591"
+  }
+]
