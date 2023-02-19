@@ -1,5 +1,6 @@
 package com.example.lab31
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,6 +11,7 @@ import com.google.gson.reflect.TypeToken
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -23,19 +25,20 @@ class MainActivity : AppCompatActivity() {
 
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
-        binding.recyclerView.adapter = CustomAdapter(persons)
+        val adapter = CustomAdapter(persons)
+        binding.recyclerView.adapter = adapter
 
         binding.sortByName.setOnClickListener {
-            binding.recyclerView.adapter =
-                CustomAdapter(persons.sortedBy { it.name }.toTypedArray())
+            persons.sortBy { it.name }
+            adapter.notifyDataSetChanged()
         }
         binding.sortBySex.setOnClickListener {
-            binding.recyclerView.adapter =
-                CustomAdapter(persons.sortedBy { it.sex }.toTypedArray())
+            persons.sortBy { it.sex }
+            adapter.notifyDataSetChanged()
         }
         binding.sortByPhoneNumber.setOnClickListener {
-            binding.recyclerView.adapter =
-                CustomAdapter(persons.sortedBy { it.phoneNumber }.toTypedArray())
+            persons.sortBy { it.phoneNumber }
+            adapter.notifyDataSetChanged()
         }
     }
 }
